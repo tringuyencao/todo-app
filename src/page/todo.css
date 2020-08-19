@@ -1,0 +1,77 @@
+.card_todo {
+    background-color: #ddd;
+    color: black;
+    text-align: start;
+    margin: 5px 0px;
+    border-radius: 2px;
+    display: flex;
+}
+
+.card_todo .check_todo{
+    background-color: #eee;
+    padding: 0px 5px;
+    flex-grow: 8;
+}
+
+.card_todo .check_todo:hover{
+    background-color: #fcff56;
+}
+.card_todo .checked_todo{
+    background-color: #4ac35e;
+    color: white;
+    padding: 0px 5px;
+    flex-grow: 8;
+}
+
+.card_todo .remove_todo{
+    flex-grow: 1;
+    text-align: center;
+    background-color: #fff;
+    color: crimson;
+    cursor: pointer;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    min-width: 50px;
+}
+
+.card_todo .remove_todo:hover{
+    background-color: crimson;
+    color: #fff;
+}
+
+.button_todo {
+    background-color: #eee;
+    color: black;
+    min-width: 50px;
+    min-height: 30px;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: none;
+}
+
+.button_todo:active{
+    background-color: #ddd;
+}
+
+.button_todo:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.input_text_todo{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    min-height: 26px;
+    padding: 2px 10px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border: none;
+}
+
+.input_text_todo:focus{
+    outline: none;
+    box-shadow: none;
+}
