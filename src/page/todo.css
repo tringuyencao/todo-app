@@ -5,20 +5,23 @@
     margin: 5px 0px;
     border-radius: 2px;
     display: flex;
+    cursor: pointer;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 
 .card_todo .check_todo{
+    border-radius: 2px;
     background-color: #eee;
     padding: 0px 5px;
     flex-grow: 8;
 }
 
-.card_todo .check_todo:hover{
-    background-color: #fcff56;
-}
 .card_todo .checked_todo{
-    background-color: #4ac35e;
-    color: white;
+    text-decoration-line: line-through;
     padding: 0px 5px;
     flex-grow: 8;
 }
@@ -37,6 +40,8 @@
 .card_todo .remove_todo:hover{
     background-color: crimson;
     color: #fff;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 .button_todo {
@@ -49,6 +54,7 @@
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     border: none;
+    cursor: pointer;
 }
 
 .button_todo:active{
@@ -74,4 +80,18 @@
 .input_text_todo:focus{
     outline: none;
     box-shadow: none;
+}
+
+.button_filter{
+    display: flex;
+    text-align: center;
+}
+
+.button_filter button{
+    margin: 5px 5px;
+    padding: 5px 0px;
+    border-radius: 2px;
+    border: none;
+    flex-grow: 1;
+    cursor: pointer;
 }
